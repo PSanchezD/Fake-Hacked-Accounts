@@ -30,7 +30,7 @@ function Test(){
     return (
         <div>
             <h1 className="t1">The following people have been hacked</h1>
-            <p className="t2">They have been display for you use.</p>
+            <p className="t2">They have been displayed for your use.</p>
             <p className="t2">Do as you wish with this information.</p>
             {Data.map((item)=>{
                 return(
@@ -48,7 +48,7 @@ function Test(){
                 </ul>
                 )
             })}
-            <p className="t2">Refresh page for more Vitcims</p>
+            <p className="t2">Refresh the page for more Vitcims</p>
         </div>
     )
 }
