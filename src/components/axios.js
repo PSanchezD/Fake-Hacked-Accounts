@@ -30,23 +30,25 @@ function Test(){
     return (
         <div>
             <h1 className="t1">The following people have been hacked</h1>
-            <h1 className="t1">Refesh the page for more Vitcims</h1>
+            <p className="t2">They have been display for you use.</p>
+            <p className="t2">Do as you wish with this information.</p>
             {Data.map((item)=>{
                 return(
                     
                 <ul className="box">
-                    <li>gender: {item.gender}</li>
+                    <li>Gender: {item.gender}</li>
                     <li>First Name: {item.name.first}</li>
-                    <li>phone Number: {item.cell}</li>
+                    <li>Phone Number: {item.cell}</li>
                     <li>Email: {item.email}</li>
                     <li>Username: {item.login.username}</li>
                     <li>Password: {item.login.password}</li>
-                    <li>age: {item.dob.age}</li>
-                    <li>Picture of Vitcim: <img className="img" src={item.picture.large}></img></li>
+                    <li>Age: {item.dob.age}</li>
+                    <li>Picture of Victim: <img className="img" src={item.picture.large}></img></li>
 
                 </ul>
                 )
             })}
+            <p className="t2">Refresh page for more Vitcims</p>
         </div>
     )
 }
