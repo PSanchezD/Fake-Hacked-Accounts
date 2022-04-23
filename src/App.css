@@ -50,6 +50,28 @@ body{
 
 }
 
+.Victims { 
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.Victims button{
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-family:Impact;
+  font-size: 30px;
+  background-color: green;
+  color: rgba(255, 0, 0, 0.801);
+}
+.Victims button:hover{
+  background-color: red;
+  color:white
+}
+
 @media all and (max-width: 480px) {
   .box li{
     list-style: none;

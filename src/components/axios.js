@@ -22,9 +22,6 @@ function Test(){
        useEffect(()=>{
            fetch()
        },[])
-  
-
-     
 
 
     return (
@@ -43,12 +40,12 @@ function Test(){
                     <li>Username: {item.login.username}</li>
                     <li>Password: {item.login.password}</li>
                     <li>Age: {item.dob.age}</li>
-                    <li>Picture of Victim: <img className="img" src={item.picture.large}></img></li>
+                    <li>Picture of Victim: <img className="img" src={item.picture.large} alt="img"></img></li>
 
                 </ul>
                 )
             })}
-            <p className="t2">Refresh the page for more Vitcims</p>
+            <a className="Victims" href=""><button>Next Victim</button></a>
         </div>
     )
 }
